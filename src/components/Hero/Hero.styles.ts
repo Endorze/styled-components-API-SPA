@@ -7,7 +7,7 @@ justify-content: space-between;
 margin: auto;
 align-items: center;
 background: ${({theme}) => theme.colors.heroBackground};
-padding: 4rem 6rem;
+padding: ${({theme}) => theme.padding.normal};
 gap: ${({theme}) => theme.spacing.lg};
 div {
 flex: 1

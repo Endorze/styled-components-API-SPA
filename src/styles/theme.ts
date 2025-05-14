@@ -22,6 +22,9 @@ export const theme = {
         md: "16px",
         lg: "32px",
     },
+    padding: {
+        normal: "4rem 6rem",
+    }
 }
 
 
