@@ -20,24 +20,26 @@ div img {
 }
 
 img {
-    width: 80%;
+    min-width: 390px;
     height: auto;
     object-fit: cover;
 }
 
 p {
-    font-size: ${({theme}) => theme.fontSizes.lg};
+    font-size: ${({theme}) => theme.fontSizes.md};
+    font-weight: 650;
+    line-height: 32px
 }
 
 h3 {
-    font-size: ${({theme}) => theme.fontSizes.xl};
+    font-size: ${({theme}) => theme.fontSizes.md};
     color: ${({theme}) => theme.colors.subtitleColor};
 }
 `
 
 export const InputButtonDiv = styled.div`
 display: flex;
-gap: 4px;
+gap: ${({theme}) => theme.spacing.xs};
 `
 
 export const Vertical16Gap = styled.div`
