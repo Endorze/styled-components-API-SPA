@@ -1,16 +1,16 @@
-import type { FC } from "react";
+import { forwardRef, type FC } from "react";
 import { GradientDivider, LoreDiv, PokemonDiv, SectionDiv } from "./PokemonSection.styles";
 import type { PokemonData } from "../../data/pokemondata";
 
 type Props = {
-    data: PokemonData | null;
+    data: PokemonData | null,
 }
 
-const PokemonSection: FC<Props> = ({ data }) => {
+const PokemonSection = forwardRef<HTMLDivElement, Props>(({ data }, ref) => {
     if (!data) return null;
 
     return (
-        <SectionDiv>
+        <SectionDiv ref={ref}>
             <div>
                 <img src={data.sprites.front_default} alt={data.name} />
             </div>
@@ -31,6 +31,6 @@ const PokemonSection: FC<Props> = ({ data }) => {
 
         </SectionDiv>
     )
-}
+});
 
 export default PokemonSection;
