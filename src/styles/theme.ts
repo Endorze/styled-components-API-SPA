@@ -3,13 +3,18 @@ export const theme = {
         background: "#1e1f2b",
         primaryColor: "#ffffff",
         subtitleColor: "#70e3c2",
-        buttonColor: "#3a86ff",
+        buttonColor: "#f4d8da",
+        buttonText: "#1e1e1e",
+        gradientTitle: "linear-gradient(90deg, rgba(112, 227, 194, 1) 0%, rgba(255, 207, 203, 1) 100%);",
+        heroBackground: "radial-gradient(circle at 0% 0%, rgba(24, 28, 72, 1) 56%, rgba(255, 207, 203, 1) 100%);",
+
     },
     fontSizes: {
         sm: "0.875rem",
         md: "1rem",
         lg: "1.25rem",
         xl: "1.5rem",
+        xxl: "4rem",
     },
     spacing: {
         xs: "4px",
