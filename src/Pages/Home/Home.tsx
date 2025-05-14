@@ -5,7 +5,6 @@ import type { PokemonData } from "../../data/pokemondata";
 
 
 const Home = () => {
-
     const [pokemon, setPokemon] = useState<PokemonData | null>(null)
     const sectionRef = useRef<HTMLDivElement | null>(null);
 
