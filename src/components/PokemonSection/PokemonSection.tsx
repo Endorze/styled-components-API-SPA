@@ -1,4 +1,4 @@
-import { forwardRef, type FC } from "react";
+import { forwardRef } from "react";
 import { GradientDivider, LoreDiv, PokemonDiv, SectionDiv } from "./PokemonSection.styles";
 import type { PokemonData } from "../../data/pokemondata";
 
