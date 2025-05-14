@@ -9,6 +9,8 @@ align-items: center;
 background: ${({theme}) => theme.colors.heroBackground};
 padding: ${({theme}) => theme.padding.normal};
 gap: ${({theme}) => theme.spacing.lg};
+min-height: 90vh;
+
 div {
 flex: 1
 }
