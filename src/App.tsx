@@ -1,3 +1,4 @@
+import Home from './Pages/Home/Home'
 import { GlobalStyle } from './styles/GlobalStyle'
 
 function App() {
@@ -5,7 +6,7 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <p>Hej</p>
+      <Home />
     </>
   )
 }
