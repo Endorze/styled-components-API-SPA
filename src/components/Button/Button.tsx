@@ -3,7 +3,7 @@ import type { FC } from "react";
 
 type Props = {
     text: string,
-    onClick: () => void;
+    onClick?: () => void;
 }
 
 const Button:FC<Props> = ({text, onClick}) => {
