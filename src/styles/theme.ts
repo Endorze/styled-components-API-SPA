@@ -1,6 +1,7 @@
 export const theme = {
     colors: {
         background: "#1e1f2b",
+        sectionBackground1: "#221c3a",
         primaryColor: "#ffffff",
         subtitleColor: "#70e3c2",
         buttonColor: "#f4d8da",
@@ -23,12 +24,14 @@ export const theme = {
         md: "16px",
         lg: "32px",
         six: "6rem",
+
     },
     padding: {
         normal: "4rem 6rem",
+        mobile: "1rem 3rem",
     },
     breakpoints: {
-      mobile: "490px",
+      mobile: "550px",
       tablet: "990px",
       desktop: "1220px",
     }

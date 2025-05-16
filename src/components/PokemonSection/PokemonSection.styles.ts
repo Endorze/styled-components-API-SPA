@@ -5,19 +5,27 @@ display:flex;
 padding: ${({ theme }) => theme.padding.normal};
 justify-content: center;
 gap: ${({ theme }) => theme.spacing.lg};
-align-items: top;
-flex-wrap: wrap;
-
-div img {
-    min-width:390px;
-    display: flex;
-    justify-content: center;
-}
+background-color: ${({ theme }) => theme.colors.background};
 
 div {
 flex: 1;
-text-align: left;
-max-width: 390px;
+}
+
+div img {
+background-color:rgba(105, 105, 105, 0.58);
+border-radius: 15px;
+height: 100px;
+width: 100px;
+}
+
+@media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+flex-direction: column;
+gap: 0;
+padding:  ${({ theme }) => theme.padding.mobile};
+
+div {
+margin-top: ${({ theme }) => theme.spacing.md};
+}
 }
 `
 
@@ -31,33 +39,50 @@ margin: 16px 0;
 
 export const LoreDiv = styled.div`
 
-margin-top: ${({ theme }) => theme.spacing.six};
-
 h2 {
     font-weight: 800;
-    font-size: ${({theme}) => theme.fontSizes.lg};
+    font-size: ${({ theme }) => theme.fontSizes.lg};
     line-height: 42px;
 }
 
 p {
-font-size:  ${({theme}) => theme.fontSizes.md};
+font-size:  ${({ theme }) => theme.fontSizes.md};
 line-height: 32px;
 color: ${({ theme }) => theme.colors.subtitleColor};
+}
+
+
+@media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+p {
+font-size: ${({ theme }) => theme.fontSizes.sm}
+}
+
+h2 {
+font-size: ${({ theme }) => theme.fontSizes.md};
+}
 }
 `
 
 export const PokemonDiv = styled.div`
-margin-top: ${({ theme }) => theme.spacing.six};
-
 h2 {
     font-weight: 800;
-    font-size: ${({theme}) => theme.fontSizes.lg};
+    font-size: ${({ theme }) => theme.fontSizes.lg};
     line-height: 42px;
 }
 
 p {
-font-size:  ${({theme}) => theme.fontSizes.sm};
+font-size:  ${({ theme }) => theme.fontSizes.sm};
 line-height: 32px;
 color: ${({ theme }) => theme.colors.subtitleColor};
+}
+
+@media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+p {
+font-size: ${({ theme }) => theme.fontSizes.sm}
+}
+
+h2 {
+font-size: ${({ theme }) => theme.fontSizes.md};
+}
 }
 `
