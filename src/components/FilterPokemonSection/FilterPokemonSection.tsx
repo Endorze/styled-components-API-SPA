@@ -24,6 +24,7 @@ const FilterPokemonSection = () => {
         });
     };
 
+    //using it to reset the checkboxes so you don thave to untick each of them
     const resetValues = () => {
         setSelectedTypes([]);
     };

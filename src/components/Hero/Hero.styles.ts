@@ -48,6 +48,18 @@ h3 {
     font-size: ${({ theme }) => theme.fontSizes.md};
     color: ${({ theme }) => theme.colors.subtitleColor};
 }
+
+@media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
+h3 {
+font-size: ${({ theme }) => theme.fontSizes.md};
+}
+
+p {
+font-size: ${({ theme }) => theme.fontSizes.sm};
+}
+
+}
+
 `
 
 export const InputButtonDiv = styled.div`
