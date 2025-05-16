@@ -6,10 +6,21 @@ flex-direction: row;
 justify-content: space-between;
 margin: auto;
 align-items: center;
-background: ${({theme}) => theme.colors.heroBackground};
-padding: ${({theme}) => theme.padding.normal};
-gap: ${({theme}) => theme.spacing.lg};
+background: ${({ theme }) => theme.colors.heroBackground};
+padding: ${({ theme }) => theme.padding.normal};
+gap: ${({ theme }) => theme.spacing.lg};
 min-height: 90vh;
+
+@media (max-width:${({ theme }) => theme.breakpoints.tablet}) {
+    flex-direction: column-reverse;
+}
+
+@media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    img {
+    max-width: 300px;
+    }
+}
+
 
 div {
 flex: 1
@@ -28,24 +39,25 @@ img {
 }
 
 p {
-    font-size: ${({theme}) => theme.fontSizes.md};
+    font-size: ${({ theme }) => theme.fontSizes.md};
     font-weight: 650;
     line-height: 32px
 }
 
 h3 {
-    font-size: ${({theme}) => theme.fontSizes.md};
-    color: ${({theme}) => theme.colors.subtitleColor};
+    font-size: ${({ theme }) => theme.fontSizes.md};
+    color: ${({ theme }) => theme.colors.subtitleColor};
 }
 `
 
 export const InputButtonDiv = styled.div`
 display: flex;
-gap: ${({theme}) => theme.spacing.xs};
+gap: ${({ theme }) => theme.spacing.xs};
 `
 
 export const Vertical16Gap = styled.div`
 display:flex;
 flex-direction: column;
-gap: ${({theme}) => theme.spacing.md};
+gap: ${({ theme }) => theme.spacing.md};
 `
+

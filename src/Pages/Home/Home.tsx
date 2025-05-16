@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import Hero from "../../components/Hero/Hero";
 import PokemonSection from "../../components/PokemonSection/PokemonSection";
 import type { PokemonData } from "../../data/pokemondata";
+import FilterPokemonSection from "../../components/FilterPokemonSection/FilterPokemonSection";
 
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
         <>
         <Hero onFetch={setPokemon}/>
          {pokemon && <PokemonSection ref={sectionRef} data={pokemon} />}
+         <FilterPokemonSection />
         </>
     )
 }

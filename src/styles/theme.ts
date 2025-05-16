@@ -26,6 +26,11 @@ export const theme = {
     },
     padding: {
         normal: "4rem 6rem",
+    },
+    breakpoints: {
+      mobile: "490px",
+      tablet: "990px",
+      desktop: "1220px",
     }
 }
 
