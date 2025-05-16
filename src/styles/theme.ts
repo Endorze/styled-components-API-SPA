@@ -12,6 +12,7 @@ export const theme = {
 
     },
     fontSizes: {
+        footer: "12px",
         sm: "16px",
         md: "24px",
         lg: "32px",
@@ -31,7 +32,7 @@ export const theme = {
         mobile: "1rem 3rem",
     },
     breakpoints: {
-      mobile: "550px",
+      mobile: "600px",
       tablet: "990px",
       desktop: "1220px",
     }

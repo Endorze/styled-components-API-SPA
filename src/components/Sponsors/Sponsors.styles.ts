@@ -15,6 +15,7 @@ export const SponsorWrapper = styled.div`
 display:flex;
 justify-content: space-between;
 gap: ${({theme}) => theme.spacing.md};
+flex-wrap: wrap;
 
 img {
 height: 40px;

@@ -4,6 +4,7 @@ import PokemonSection from "../../components/PokemonSection/PokemonSection";
 import type { PokemonData } from "../../data/pokemondata";
 import FilterPokemonSection from "../../components/FilterPokemonSection/FilterPokemonSection";
 import Sponsors from "../../components/Sponsors/Sponsors";
+import Footer from "../../components/Footer/Footer";
 
 
 const Home = () => {
@@ -24,6 +25,7 @@ const Home = () => {
          {pokemon && <PokemonSection ref={sectionRef} data={pokemon} />}
          <FilterPokemonSection />
          <Sponsors />
+         <Footer />
         </>
     )
 }
